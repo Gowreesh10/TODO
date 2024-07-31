@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Kaushan+Script&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.fredericka-the-great-regular {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+  }
+
+.kaushan-script-regular {
+  font-family: "Kaushan Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+.gentium-book-plus-regular {
+    font-family: "Gentium Book Plus", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3rem;
+  }
+body{
+    background-color: #FEF9FF;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transform: translateY(-10%);
+    animation: slideIn 0.7s ease-out forwards;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    color: #557E63;
+    text-shadow: 1px 1px 8px;
+}
+@keyframes slideIn {
+    to {
+      transform: translateX(0);
+    }
+  }
+
+main h4{
+    color: #557E66;
+    text-shadow: 1px 1px 30px;
+}
+main p{
+    color: #73877B;
+    text-shadow: #FC0 1px 0 30px;
+}
+main h4,p{
+    display: flex;
+    justify-content: center;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+.button{
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(to right,#73877B,#557E66);
+    color: white;
+    box-shadow: 1px 3px 4px;
+    font-weight: 600;
+}
+
+.button:hover{
+    transform: translateY(-5px);
+    background: linear-gradient(to right,#eff3f1,#cfecdb);
+    color: rgb(0, 0, 0);
+}
+
+.button{
+    transition: transform 0.5s ease;
+}
